@@ -2,14 +2,33 @@
 
 /* Debug */
 .debug [class*="col-"] {
-  height: 300px;
+  height: 200px;
   border: 2px solid black;
   background-color: rgba(60, 190, 190, 0.2);
+  padding: 10px;
+  text-align: center;
+  line-height: 100%;
+  position: relative;
 }
 
  .debug .container {
    background: rgba(60, 190, 60, 0.2)
  }
+
+ [class*="col-"] > .container {
+   height: 100%;
+ }
+
+ [class*="col-"] > .container > [class*="col-"] {
+   height: 100%;
+ }
+
+[class*="col-"] > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Reset */
 * {
@@ -40,7 +59,7 @@
 }
 
 .col-2 {
-  widhth: calc( (100% / 12) * 2 );
+  width: calc( (100% / 12) * 2 );
 }
 
 .col-3 {
@@ -48,7 +67,7 @@
 }
 
 .col-4 {
-  widhth: calc( (100% / 12) * 4 );
+  width: calc( (100% / 12) * 4 );
 }
 
 .col-5 {
@@ -56,7 +75,7 @@
 }
 
 .col-6 {
-  widhth: calc( (100% / 12) * 6 );
+  width: calc( (100% / 12) * 6 );
 }
 
 .col-7 {
@@ -64,7 +83,7 @@
 }
 
 .col-8 {
-  widhth: calc( (100% / 12) * 8 );
+  width: calc( (100% / 12) * 8 );
 }
 
 .col-9 {
@@ -72,7 +91,7 @@
 }
 
 .col-10 {
-  widhth: calc( (100% / 12) * 10 );
+  width: calc( (100% / 12) * 10 );
 }
 
 .col-11 {
@@ -80,5 +99,54 @@
 }
 
 .col-12 {
-  widhth: calc( (100% / 12) * 12 );
+  width: calc( (100% / 12) * 12 );
+}
+
+/* Off-Set */
+.offset-1 {
+  margin-left: calc( (100% / 12) * 1 );
+}
+
+.offset-2 {
+  margin-left: calc( (100% / 12) * 2 );
+}
+
+.offset-3 {
+  margin-left: calc( (100% / 12) * 3 );
+}
+
+.offset-4 {
+  margin-left: calc( (100% / 12) * 4 );
+}
+
+.offset-5 {
+  margin-left: calc( (100% / 12) * 5 );
+}
+
+.offset-6 {
+  margin-left: calc( (100% / 12) * 6 );
+}
+
+.offset-7 {
+  margin-left: calc( (100% / 12) * 7 );
+}
+
+.offset-8 {
+  margin-left: calc( (100% / 12) * 8 );
+}
+
+.offset-9 {
+  margin-left: calc( (100% / 12) * 9 );
+}
+
+.offset-10 {
+  margin-left: calc( (100% / 12) * 10 );
+}
+
+.offset-11 {
+  margin-left: calc( (100% / 12) * 11 );
+}
+
+.offset-12 {
+  margin-left: calc( (100% / 12) * 12 );
 }
